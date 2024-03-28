@@ -5,7 +5,7 @@ import plotly.express as px
 import dash_bootstrap_components as dbc
 
 # Incorporate data
-df = pd.read_csv(sales_data_samples.csv,encoding = 'latin-1')
+df = pd.read_csv('sales_data_samples.csv',encoding = 'latin-1')
 # Transformar em datetime 
 df['Data_Pedido'] = pd.to_datetime(df['Data_Pedido'])
 df['Ano'] = df['Data_Pedido'].dt.year
